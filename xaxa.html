@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#" class="a">Customer</a>
+        <a href="#" class="a">Corporate</a>
+        <a href="#" class="a">monpay</a>
+        <a href="#" class="a">Voo</a>
+        <a href="#" class="a">Support</a>
+</div>
+
+
+<div style="background-color: red;  position: -webkit-sticky;
+position: sticky;
+top: 0;
+padding: 5px;">
+    <h3 class="b">Mobicom</h3>
+    
+   
+    <span class="menu b" style="font-size:30px;cursor:pointer;float: right; margin: 6px;" onclick="openNav()">&#9776; </span>
+    <nav class="nav b">
+      <a href="#" class="a">Customer</a>
+      <a href="#" class="a">Corporate</a>
+      <a href="#" class="a">monpay</a>
+      <a href="#" class="a">Voo</a>
+      <a href="#" class="a">Support</a>
+    </nav>
+    <form class="example b nav" action="/action_page.php" style="margin:auto;max-width:300px">
+        <input type="text" placeholder="Search.." name="search2">
+        <button type="submit"><i class="fa fa-search"></i></button>
+
+</div>
+
+<script>
+
+var modal = document.getElementById('id01');
+
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</div>
+
+<div id="my" class="sidenav ">
+    <a href="javascript:void(0)" class="closebtn" onclick="close()">&times;</a>
+    <br><br>
+    <form class="example" action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+</div>
+
+<script>
+    function ser() {
+      document.getElementById("my").style.width = "100%";
+    }
+    
+    function close() {
+      document.getElementById("my").style.width = "0";
+    }
+</script>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+</body>
+</html>
